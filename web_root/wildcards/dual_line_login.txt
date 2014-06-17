@@ -1,0 +1,18 @@
+<!-- begin admin dual line login custom content -->
+<!-- begin templates -->
+<script type="text/template" id="fields-template">
+    <!-- begin admin dual line login fields-template -->
+    <label for="newUsername">Username</label>
+    <input type='text' id='newUsername' name="username" autofocus/>
+    <br>
+    <label for="newPassword">Password</label>
+    <input type='password' id='newPassword' name="password" autocomplete="off"/>
+    <br>
+    <label id="divMayus" style="display: none; color: red; font-weight: bold">Caps Lock is on.</label>
+    <label id="divSemi" style="display: none; color: red; font-weight: bold">No Semi-Colon is needed.</label>
+    <!-- begin admin dual line login fields-template -->
+</script>
+<!-- end templates -->
+
+<script src="/scripts/AdminDualLineLogin/adminduallinelogin.js"></script>
+<!-- end admin dual line login custom content -->
