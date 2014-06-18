@@ -1,5 +1,5 @@
 /*global $j, b64_md5, hex_hmac_md5, document, pskey*/
-(function() {
+$j(document).ready(function() {
     'use strict';
     var oldUsername,
         fieldsTemplate;
@@ -19,7 +19,7 @@
     $j('#btnEnter').attr('onclick', '');
 
     // Modify form inputs.
-    $j('label[for="password"]').remove();
+    $j('label[for="fieldPassword"]').remove();
 
     $j('#fieldPassword').remove();
 
@@ -83,4 +83,4 @@
             document.getElementById('divSemi').style.display = 'none';
         }
     }
-}());
+});
