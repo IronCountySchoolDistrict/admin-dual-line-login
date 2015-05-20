@@ -14,5 +14,5 @@
 </script>
 <!-- end templates -->
 
-<script src="/scripts/AdminDualLineLogin/adminduallinelogin.js"></script>
+<script src="/scripts/admin-dual-line-login/main.js"></script>
 <!-- end admin dual line login custom content -->
