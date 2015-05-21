@@ -4,7 +4,7 @@
   "description": "Admin Dual Line Login is a customization that splits the single login field into separated Username and Password fields in PowerSchool Administrator.",
   "main": "web_root/scripts/AdminDualLineLogin/adminduallinelogin.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha-casperjs"
   },
   "repository": {
     "type": "git",
@@ -17,11 +17,15 @@
   },
   "homepage": "https://github.com/IronCountySchoolDistrict/admin-dual-line-login#readme",
   "devDependencies": {
+    "casperjs": "^1.1.0-beta3",
+    "chai": "^2.3.0",
     "del": "^1.2.0",
     "gulp": "^3.8.11",
-    "gulp-data": "^1.2.0",
     "gulp-debug": "^2.0.1",
     "gulp-sftp": "^0.1.4",
-    "gulp-zip": "^3.0.2"
+    "gulp-zip": "^3.0.2",
+    "mocha": "^2.2.5",
+    "mocha-casperjs": "^0.5.3",
+    "phantomjs": "^1.9.16"
   }
 }
