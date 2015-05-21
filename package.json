@@ -11,9 +11,17 @@
     "url": "git+https://github.com/IronCountySchoolDistrict/admin-dual-line-login.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/IronCountySchoolDistrict/admin-dual-line-login/issues"
   },
-  "homepage": "https://github.com/IronCountySchoolDistrict/admin-dual-line-login#readme"
+  "homepage": "https://github.com/IronCountySchoolDistrict/admin-dual-line-login#readme",
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.8.11",
+    "gulp-data": "^1.2.0",
+    "gulp-debug": "^2.0.1",
+    "gulp-sftp": "^0.1.4",
+    "gulp-zip": "^3.0.2"
+  }
 }
