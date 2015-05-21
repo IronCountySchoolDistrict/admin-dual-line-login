@@ -29,9 +29,7 @@ $j(document).ready(function() {
     fieldsTemplate = $j($j('#fields-template').html());
     fieldsTemplate.insertAfter('fieldset div:eq(0)');
 
-    $j(document).ready(function() {
-        $j('#newUsername').focus();
-    });
+    $j('#newUsername').focus();
 
     $j('#newUsername, #newPassword').on('keypress', function(event) {
         capslockon(event);
