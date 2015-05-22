@@ -14,5 +14,21 @@
 </script>
 <!-- end templates -->
 
-<script src="/scripts/admin-dual-line-login/main.js"></script>
+<script>
+    require.config({
+        paths: {
+            // app modules
+            admin_dual_line_login: '//psimagestest.irondistrict.org/scripts/admin-dual-line-login'
+        }
+    });
+</script>
+
+<script>
+    $j(document).ready(function() {
+        require(["admin_dual_line_login/main"], function(app) {
+            app.main();
+        });
+    });
+    
+</script>
 <!-- end admin dual line login custom content -->
