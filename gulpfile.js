@@ -4,7 +4,7 @@ var sftp = require("gulp-sftp");
 var del = require("del");
 var debug = require("gulp-debug");
 var watch = require("gulp-watch");
-var credentials = require("./deploy-credentials.json");
+var credentials = require(".././deploy-credentials.json");
 
 // No image server
     gulp.task("build-plugin", function() {
