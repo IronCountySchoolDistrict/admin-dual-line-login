@@ -3,6 +3,7 @@ var zip = require("gulp-zip");
 var sftp = require("gulp-sftp");
 var del = require("del");
 var debug = require("gulp-debug");
+var watch = require("gulp-watch");
 var credentials = require("./deploy-credentials.json");
 
 // No image server
@@ -30,6 +31,12 @@ gulp.task("build-no-img", ["build-plugin", "build-src", "zip", "clean"]);
 
 gulp.task("test-deploy", function() {
     return gulp.src("src/**")
+        .pipe(sftp(credentials.test));
+});
+
+gulp.task("watch-deploy", function() {
+    return gulp.src("src/**")
+        .pipe(watch("src/**"))
         .pipe(sftp(credentials.test));
 });
 

@@ -8,6 +8,7 @@ define(["jquery"], function($) {
             this.setFocus();
             this.bindEvents();
         },
+        
  
         // Remove DOM elements and attributes that we will be replacing
         removeElements: function() {
@@ -33,10 +34,6 @@ define(["jquery"], function($) {
         },
 
         bindEvents: function() {
-            // $("#btnEnter").on("click", function(event) {
-            //     event.preventDefault();
-            //     psCustomEnter();
-            // });
             var _this = this;
             $("#LoginForm").on("submit", function(event) {
                 return _this.doCustomAdminLogin(this); // this === form

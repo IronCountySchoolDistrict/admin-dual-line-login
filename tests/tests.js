@@ -43,7 +43,15 @@ describe("DOM Tests", function() {
         "#fieldPassword".should.not.be.inDOM;
     });
 
-    it("document has fieldset fieldset div:nth-child(1)", function() {
+    it("label[for=fieldPassword] has been removed from the DOM", function() {
+        "label[for=fieldPassword]".should.not.be.inDOM;
+    });
+
+    it("fieldPassword has been removed from the DOM", function() {
+        "#fieldPassword".should.not.be.inDOM;
+    });
+
+    it("input[name=username][type=hidden] has been removed from the DOM", function() {
         "fieldset div:nth-child(1)".should.be.inDOM;
     });
 });
