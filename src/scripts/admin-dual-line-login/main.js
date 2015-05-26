@@ -8,7 +8,6 @@ define(["jquery"], function($) {
             this.setFocus();
             this.bindEvents();
         },
-        
  
         // Remove DOM elements and attributes that we will be replacing
         removeElements: function() {

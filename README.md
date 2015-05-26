@@ -24,4 +24,4 @@ NOTE: Although the user is redirected to /admin/home.html when the user enters i
 custom insertion point shown above is not needed on home.html. It is only required on pw.html.
 
 ### Gulp Tasks ###
-See https://github.com/IronCountySchoolDistrict/ps-tasks for gulp task definitions
+See https://github.com/IronCountySchoolDistrict/gulp-ps-tasks for gulp task definitions

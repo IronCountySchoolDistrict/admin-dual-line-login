@@ -3,4 +3,4 @@ var plugins = require("gulp-load-plugins")();
 plugins.del = require("del");
 
 
-require("../ps-tasks/tasks")(gulp, plugins);
+require("../gulp-ps-tasks/tasks")(gulp, plugins);
