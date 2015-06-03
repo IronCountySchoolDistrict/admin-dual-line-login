@@ -1,4 +1,4 @@
-/*global $, b64_md5, hex_hmac_md5, document, pskey*/
+/*global $, b64_md5, hex_hmac_md5, document, pskey, define*/
 define(["jquery"], function($) {
     "use strict";
     return {
@@ -8,7 +8,7 @@ define(["jquery"], function($) {
             this.setFocus();
             this.bindEvents();
         },
- 
+
         // Remove DOM elements and attributes that we will be replacing
         removeElements: function() {
             // Remove the original onsubmit attribute.
@@ -34,7 +34,7 @@ define(["jquery"], function($) {
 
         bindEvents: function() {
             var _this = this;
-            $("#LoginForm").on("submit", function(event) {
+            $("#LoginForm").on("submit", function() {
                 return _this.doCustomAdminLogin(this); // this === form
             });
 
@@ -53,9 +53,9 @@ define(["jquery"], function($) {
                 // LDAP is enabled, so send the clear-text password
                 // Customers should have SSL enabled if they are using LDAP
                 form.ldappassword.value = clearTextPassword; // Send the pw for LDAP
-            } 
+            }
             form.password.value = this.makePasswordHash(clearTextPassword);
-            
+
             return true;
         },
 
