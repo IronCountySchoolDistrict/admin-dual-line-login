@@ -18,7 +18,7 @@
     require.config({
         paths: {
             // app modules
-            admin_dual_line_login: '<!-- @echo IMAGE_SERVER_URL -->/scripts/admin-dual-line-login'
+            admin_dual_line_login: '<!-- @echo IMAGE_SERVER_URL -->/admin-dual-line-login/js'
         }
     });
 </script>
@@ -29,6 +29,6 @@
             app.main();
         });
     });
-    
+
 </script>
 <!-- end admin dual line login custom content -->

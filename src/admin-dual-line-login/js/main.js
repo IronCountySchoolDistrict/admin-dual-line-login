@@ -49,7 +49,7 @@ define(["jquery"], function($) {
 
         doCustomAdminLogin: function(form) {
             var clearTextPassword = form.password.value;
-            if (form.ldappassword !== null) {
+            if (form.ldappassword !== ) {
                 // LDAP is enabled, so send the clear-text password
                 // Customers should have SSL enabled if they are using LDAP
                 form.ldappassword.value = clearTextPassword; // Send the pw for LDAP
